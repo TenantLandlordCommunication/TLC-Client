@@ -5,7 +5,9 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 100vh;
 }
+
 
 nav {
   color: #FFFFFF;
@@ -16,4 +18,19 @@ nav {
   display: flex;
   justify-content: center;
   margin-top: 20vh;
+}
+
+main.container {
+  padding-bottom: 20em;
+}
+
+.signInForm {
+  padding-bottom: 1em;
+  /*opacity: 0.6;*/
+}
+
+footer {
+  color: #FFFFFF;
+  background-color: #191919;
+  text-align: center;
 }
