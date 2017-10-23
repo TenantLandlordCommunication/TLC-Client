@@ -1,0 +1,19 @@
+
+html {
+  background: url("../images/HomeBackgroundImg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  color: #FFFFFF;
+  background-color: #191919;
+  text-align: center;
+}
+.tabs{
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
