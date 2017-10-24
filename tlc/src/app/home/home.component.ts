@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+
+
+$('#elemId').width();
+
+
 
 @Component({
   selector: 'app-home',
@@ -10,6 +16,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('ul.tabs').tabs();
+
   }
 
 }
