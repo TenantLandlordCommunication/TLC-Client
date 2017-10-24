@@ -1,3 +1,96 @@
-<p>
-  home works!
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Tenant Landlord Communications</a>
+      </div>
+    </nav>
+    <main class="container">
+      <section class class="col m6 s12 card center-align signInForm">
+        <ul id="tabs-swipe-demo" class="tabs container col s12 m4">
+          <li class="tab col s3"><a class="active"href="#test-swipe-1">Sign In</a></li>
+          <li class="tab col s3"><a  href="#test-swipe-2">Sign Up</a></li>
+        </ul>
+        <div id="test-swipe-1" class="container center signIN">
+          <h2>Sign In</h2>
+          <div class="row">
+            <form class="col s12 m12">
+              <div class="row">
+                <span class="col s3"></span>
+                <div class="input-field col s12 m6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <span class="col s3"></span>
+                <div class="input-field col s12 m6">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">password</label>
+                </div>
+              </div>
+              <a routerLink="/main"><button class="btn btn-success pull-right" > Add Customer</button></a>
+              <!-- <a routerLink="./main/main.comp.html"><a class="waves-effect waves-light btn">Login</a></a> -->
+            </form>
+          </div>
+        </div>
+        <div id="test-swipe-2" class="container signUp">
+          <h2>Sign Up</h2>
+          <form class="form signup">
+            <div class="row">
+              <span class="col s3"></span>
+              <div class="input-field col s6">
+                <input id="name" name="signup-name" type="text" class="validate">
+                <label for="signup-name">First and Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <span class="col s3"></span>
+              <div class="input-field col s6">
+                <input id="email" name="signup-email" type="text" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <span class="col s3"></span>
+              <div class="input-field col s6">
+                <input id="phoneNumber" name="signup-phoneNumber" type="text" class="validate">
+                <label for="phoneNumber">Phone Number</label>
+              </div>
+            </div>
+            <div class="row">
+              <span class="col s3"></span>
+              <div class="input-field col s6">
+                <input id="username" name="signup-username" type="text" class="validate">
+                <label for="username">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <span class="col s3"></span>
+              <div class="input-field col s6">
+                <input id="password" name="signup-password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <a routerLink="/main"><input class="btn signupBtn" type="submit" name="submit" value="signup"></a> </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+      <pre><p>TLC © 2014 Copyright by Logan Crewss</p></pre>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

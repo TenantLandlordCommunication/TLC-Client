@@ -1,0 +1,29 @@
+html {
+    background: url("../../images/mainBackgroundImg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  nav {
+    color: #FFFFFF;
+    background-color: #191919;
+    text-align: center;
+  }
+  footer {
+    color: #FFFFFF;
+    background-color: #191919;
+    text-align: center;
+  }
