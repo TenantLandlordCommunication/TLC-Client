@@ -1,0 +1,24 @@
+[debug] [2017-10-24T16:35:16.110Z] ----------------------------------------------------------------------
+[debug] [2017-10-24T16:35:16.115Z] Command:      /usr/local/Cellar/node/8.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-10-24T16:35:16.116Z] CLI Version:  3.9.1
+[debug] [2017-10-24T16:35:16.116Z] Platform:     darwin
+[debug] [2017-10-24T16:35:16.116Z] Node Version: v8.7.0
+[debug] [2017-10-24T16:35:16.117Z] Time:         Tue Oct 24 2017 10:35:16 GMT-0600 (MDT)
+[debug] [2017-10-24T16:35:16.117Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-24T16:35:16.137Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-24T16:35:16.138Z] > authorizing via signed-in user
+[debug] [2017-10-24T16:35:16.141Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tenantlandlordcommunications  
+ Tue Oct 24 2017 10:35:16 GMT-0600 (MDT)
+[debug] [2017-10-24T16:35:16.589Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-24T16:35:16.590Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tenantlandlordcommunications/tokens  
+ Tue Oct 24 2017 10:35:16 GMT-0600 (MDT)
+[debug] [2017-10-24T16:35:16.903Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tenantlandlordcommunications'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing / directory for upload...
+[warn] ⚠  Warning: Public directory does not contain index.html
+[debug] [2017-10-24T16:36:24.663Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tenantlandlordcommunications/uploads/-KxEEFb8P1O5WJzVlZ6K?fileCount=24811&message=  
+ Tue Oct 24 2017 10:36:24 GMT-0600 (MDT)

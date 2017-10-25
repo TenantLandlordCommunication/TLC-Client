@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('ul.tabs').tabs();
+    // $('ul.tabs').tabs();
 
   }
 
