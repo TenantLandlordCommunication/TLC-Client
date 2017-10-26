@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-// import { HTTPTestService} from 'app/http.service';
-// import { Response } from '@angular/http'
 import { HttpClient } from '@angular/common/http';
+// import {MaterializeAction} from 'angular2-materialize';
+// import "materialize-css";
+
+
 
 @Component({
   selector: 'app-main',
@@ -26,13 +28,17 @@ export class MainComponent implements OnInit {
       console.log(data)
       this.tenants = data
     })
+
+    this.http.get('https://tenantlandlordcommunications.herokuapp.com/tenant-address')
+    .subscribe(data =>{
+      console.log(data)
+      this.tenants = data
+    })
+
+
+
+
   }
-  // onGetProperties(){
-  //   this.httpservice.getProperty()
-  //   .subscribe((response: Response) => {
-  //     console.log(response.json())
-  //   })
-  // }
 
 
 }

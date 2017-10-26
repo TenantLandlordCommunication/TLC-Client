@@ -14,68 +14,62 @@
    </div>
     </nav>
     <main>
-
-      <section class class="col m6 s12 card center-align signInForm">
-        <ul id="tabs-swipe-demo" class="tabs container col s12 m4">
-          <li class="tab col s3"><a class="active"href="#SignIn">Properties</a></li>
-          <li class="tab col s3"><a  href="#SignUp">Documents</a></li>
-          <li class="tab col s3"><a  href="#SignUp">Tenants</a></li>
+      <section class class="col m6 s12 card center-align">
+        <ul id="tabs-swipe" class="tabs container col s12 m4">
+          <li class="tab col s3"><a class="active"href="#properties">Properties</a></li>
+          <li class="tab col s3"><a  href="#documents">Documents</a></li>
+          <li class="tab col s3"><a  href="#tenants">Tenants</a></li>
         </ul>
-        <div id="SignIn" class="container center signIN">
+        <div id="properties" class="container center">
           <div class="row">
-            <form class="col s12 m12">
-              <div class="properties" *ngFor="let property of properties">
-                <div class="container">
-                  <p>{{property.address}}</p>
-                </div>
-              </div>
-            </form>
+            <table class="striped">
+              <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Zip Code</th>
+                    <th>Documents</th>
+                    <th>Rent Amount</th>
+                </tr>
+              </thead>
+                <tr *ngFor="let property of properties">
+                  <td>{{property.address}}</td>
+                  <td>{{property.zipcode}}</td>
+                  <td><i class="material-icons">folder</i></td>
+                  <td>${{property.rent}}</td>
+                  <td><i class="material-icons">delete_forever</i></td>
+                </tr>
+              <tbody>
+            </table>
           </div>
         </div>
-        <!-- <div id="SignUp" class="container signUp">
-          <h2>Sign Up</h2>
-          <form class="form signup">
-            <div class="row">
-              <span class="col s3"></span>
-
-            <div class="row">
-              <div class="input-field col s12">
-                <a routerLink="/main"><input class="btn signupBtn" type="submit" name="submit" value="signup"></a> </div>
-            </div>
-          </form>
-        </div> -->
+        <div id="tenants" class="container center">
+          <div class="row">
+            <a class="btn-floating btn-small waves-effect waves-light black left"><i class="material-icons">add</i> Tenants</a>            <table class="striped">
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Property</th>
+                    <th>Zip Code</th>
+                    <th>Documents</th>
+                    <th>Rent Amount</th>
+                </tr>
+              </thead>
+                <tr *ngFor="let tenant of tenants">
+                  <td>{{tenant.name}}</td>
+                  <td>{{tenant.number}}</td>
+                  <td>{{tenant.email}}</td>
+                  <td>{{tenant.address}}</td>
+                  <td>{{tenant.zipcode}}</td>
+                  <td><i class="material-icons">folder</i></td>
+                  <td>${{tenant.rentdue}}</td>
+                  <td><i class="material-icons">delete_forever</i></td>
+                </tr>
+            </table>
+          </div>
+        </div>
       </section>
-      <!-- <section class="container col s12 m6">
-        <ul class="collapsible tableUl" data-collapsible="accordion">
-    <li class="tableLi">
-      <div class="collapsible-header">
-        <i class="material-icons">Property</i>
-        <!-- <span class="new badge">4</span> -->
-      <!-- </div>
-      <div class="collapsible-body white" *ngFor="let property of properties"><p>{{property.address}}</p></div>
-    </li>
-    <li class="tableLi">
-      <div class="collapsible-header">
-        <i class="material-icons">Documents</i>
-        <!-- <span class="badge">1</span> -->
-      <!-- </div>
-      <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p>
-        <label for="file-upload" class="custom-file-upload"></label>
-        <button type='submit'> Upload </button>
-        <input id="file-upload" type="file"/>
-      </div>
-    </li>
-    <li class="tableLi">
-      <div class="collapsible-header">
-        <i class="material-icons">Tenants</i> -->
-        <!-- <span class="badge">1</span> -->
-      <!-- </div>
-      <div class="collapsible-body white" *ngFor="let tenant of tenants"><p>{{tenant.name}}</p> -->
-        <!-- <a class="waves-effect waves-light btn">button</a> -->
-      <!-- </div>
-    </li>
-  </ul>
-      </section> -->
 
 
     </main>
