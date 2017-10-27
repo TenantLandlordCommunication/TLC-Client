@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-// import {MaterializeAction} from 'angular2-materialize';
-// import "materialize-css";
 
 
 
@@ -10,9 +8,12 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
+
+
 export class MainComponent implements OnInit {
     properties
     tenants
+
     constructor (private http: HttpClient){
     }
 
@@ -34,6 +35,7 @@ export class MainComponent implements OnInit {
       console.log(data)
       this.tenants = data
     })
+
 
 
 

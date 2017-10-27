@@ -6,21 +6,20 @@ import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-// import { Http } from '@angular/http'
-// import { HttpComponent } from './http/http.component'
-// import { HTTPTestService } from 'app/http.service'
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRouterModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
