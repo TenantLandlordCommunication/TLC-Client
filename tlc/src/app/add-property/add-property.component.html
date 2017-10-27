@@ -1,3 +1,50 @@
-<p>
-  add-property works!
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TLC</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+         <a href="#" class="brand-logo left">Tenant Landlord Communications</a>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+           <a routerLink="/main"><li>Home</li></a>
+           <a routerLink=""><li>Sign Out</li></a>
+         </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="row black">
+        <form class="col s12" #propertyData = 'ngForm' (ngSubmit) = 'addNewProperty(propertyData.value)'>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="address" type="text" class="validate">
+              <label for="address" ngModel>Address</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="unit" type="text" class="validate">
+                <label for="unit" ngModel>Unit</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="zipcode" type="text" class="validate">
+                <label for="zipcode" ngModel>Zip Code</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="rent" type="integer" class="validate">
+              <label for="rent" ngModel>Rent</label>
+            </div>
+          </div>
+          <a class="waves-effect waves-light btn">Submit</a>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

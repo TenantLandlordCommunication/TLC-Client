@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AddPropertyComponent } from './add-property/add-property.component';
+import { FormsModule }   from '@angular/forms';
+
 
 
 
@@ -16,12 +18,13 @@ import { AddPropertyComponent } from './add-property/add-property.component';
     MainComponent,
     HomeComponent,
     AddPropertyComponent,
-    
+
   ],
   imports: [
     BrowserModule,
     AppRouterModule,
     HttpClientModule,
+    FormsModule
 
 
   ],
