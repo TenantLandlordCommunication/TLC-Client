@@ -49,6 +49,7 @@ label {
   color: black;
   font-weight: bold;
   border: solid black;
+  margin-bottom: 3px;
 }
 
 #rent {

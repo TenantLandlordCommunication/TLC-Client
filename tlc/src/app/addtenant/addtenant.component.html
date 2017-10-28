@@ -1,3 +1,44 @@
-<p>
-  addtenant works!
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TLC</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+         <a href="#" class="brand-logo left">Tenant Landlord Communications</a>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+           <a routerLink="/main"><li>Home</li></a>
+           <a routerLink=""><li>Sign Out</li></a>
+         </ul>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="col s12 m4 row  center white formBox">
+        <form id="form" class="col s12 m4 center" #tenantData = 'ngForm' (ngSubmit) = 'addNewTenant(tenantData.value)'>
+          <div class="row form">
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate">
+              <label for="name" ngModel>Name</label>
+            </div>
+          </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="number" type="text" class="validate">
+                <label for="number" ngModel>Phone Number</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="text" class="validate">
+                <label for="email" ngModel>Email</label>
+              </div>
+            </div>
+          <input id="submit" type="submit" name="submit" value="Add Tenant">
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
