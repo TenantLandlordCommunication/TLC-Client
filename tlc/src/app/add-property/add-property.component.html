@@ -14,14 +14,15 @@
          </ul>
       </div>
     </nav>
-    <main>
-      <div class="row black">
-        <form class="col s12" #propertyData = 'ngForm' (ngSubmit) = 'addNewProperty(propertyData.value)'>
-          <div class="row">
+    <main class="container">
+      <div class="col s12 m4 row  center white formBox">
+        <form id="form" class="col s12 m4 center" #propertyData = 'ngForm' (ngSubmit) = 'addNewProperty(propertyData.value)'>
+          <div class="row form">
             <div class="input-field col s12">
               <input id="address" type="text" class="validate">
               <label for="address" ngModel>Address</label>
             </div>
+          </div>
             <div class="row">
               <div class="input-field col s12">
                 <input id="unit" type="text" class="validate">
@@ -34,14 +35,13 @@
                 <label for="zipcode" ngModel>Zip Code</label>
               </div>
             </div>
-          </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 center">
               <input id="rent" type="integer" class="validate">
               <label for="rent" ngModel>Rent</label>
             </div>
           </div>
-          <a class="waves-effect waves-light btn">Submit</a>
+          <input id="submit" type="submit" name="submit" value="Add Property">
         </form>
       </div>
     </main>

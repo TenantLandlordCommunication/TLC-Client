@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AddPropertyComponent } from './add-property/add-property.component';
 import { FormsModule }   from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { AddtenantComponent } from './addtenant/addtenant.component';
 
 
 
@@ -18,13 +20,15 @@ import { FormsModule }   from '@angular/forms';
     MainComponent,
     HomeComponent,
     AddPropertyComponent,
+    AddtenantComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRouterModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    HttpModule
 
 
   ],

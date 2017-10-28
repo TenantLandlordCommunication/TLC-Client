@@ -20,9 +20,37 @@ html {
   nav {
     color: #FFFFFF;
     background-color: #191919;
-    text-align: center;
+    text-align: left;
+    border-bottom: solid white;
   }
   nav ul {
     padding: 0;
     margin: 0;
+    display: flex;
   }
+
+.formBox {
+  margin-top: 80px;
+  opacity: 0.6;
+}
+
+#form {
+    display: inline-block;
+    text-align: center;
+    margin-left: 300px;
+}
+
+label {
+  color: black;
+  font-weight: bold;
+}
+
+#submit {
+  color: black;
+  font-weight: bold;
+  border: solid black;
+}
+
+#rent {
+  border: solid black;
+}
