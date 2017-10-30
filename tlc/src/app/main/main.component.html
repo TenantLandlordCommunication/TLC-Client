@@ -8,7 +8,7 @@
     <nav>
       <div class="nav-wrapper">
          <a href="#" class="brand-logo left">Tenant Landlord Communications</a>
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <ul id="nav-mobile" class="signout right hide-on-med-and-down">
            <a routerLink=""><li>Sign Out</li></a>
          </ul>
       </div>
@@ -37,7 +37,7 @@
                   <td>{{property.zipcode}}</td>
                   <td><i class="material-icons">folder</i></td>
                   <td>${{property.rent}}</td>
-                  <td><i class="material-icons">delete_forever</i></td>
+                  <td><i onclick="Materialize.toast('Property Deleted', 4000)" class="hoverable material-icons">delete_forever</i></td>
                 </tr>
               <tbody>
             </table>
@@ -66,13 +66,23 @@
                   <td>{{tenant.zipcode}}</td>
                   <td><i class="material-icons">folder</i></td>
                   <td>${{tenant.rentdue}}</td>
+                  <td>
+                    <div class="switch">
+                      <label>
+                        Unpaid
+                        <input type="checkbox">
+                        <span class="lever red"></span>
+                        Paid
+                      </label>
+                    </div>
+                  </td>
+                  <td></td>
                   <td><i class="material-icons">delete_forever</i></td>
                 </tr>
             </table>
           </div>
         </div>
       </section>
-
     </main>
     <footer class="page-footer">
       <div class="footer-copyright">

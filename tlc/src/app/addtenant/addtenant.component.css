@@ -23,31 +23,34 @@ html {
     text-align: left;
     border-bottom: solid white;
   }
+
   nav ul {
     padding: 0;
     margin: 0;
     display: flex;
   }
+
   ul {
     list-style-type: none;
     margin: 50px;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
     display: flex;
     justify-content: center;
-    
+
   }
 
 .formBox {
   margin-top: 80px;
+  margin-left: 100px;
   opacity: 0.6;
+
 }
 
 #form {
     display: inline-block;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 230px;
 }
 
 label {

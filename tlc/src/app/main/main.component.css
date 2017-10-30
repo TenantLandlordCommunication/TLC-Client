@@ -1,5 +1,5 @@
 html {
-    background: url("../../images/mainBackgroundImg.jpg") no-repeat center center fixed;
+    background-color: grey;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -21,7 +21,7 @@ html {
     color: #FFFFFF;
     background-color: #191919;
   }
-  
+
   nav ul {
     padding: 0;
     margin: 0;
@@ -35,7 +35,6 @@ html {
     background-color: #333333;
     display: flex;
     justify-content: center;
-
   }
 
   .tableLi {

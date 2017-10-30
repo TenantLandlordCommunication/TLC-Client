@@ -20,6 +20,7 @@ nav {
 
 main.container {
   padding-bottom: 20em;
+  opacity: .9
 }
 
 .signInForm {

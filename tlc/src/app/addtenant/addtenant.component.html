@@ -25,7 +25,7 @@
           </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="number" type="text" class="validate">
+                <input id="number" type="text" data-length="10" class="validate">
                 <label for="number" ngModel>Phone Number</label>
               </div>
             </div>
@@ -34,6 +34,15 @@
                 <input id="email" type="text" class="validate">
                 <label for="email" ngModel>Email</label>
               </div>
+            </div>
+            <div class="input-field col s12" *ngFor="let property of properties">
+              <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">{{property.address}}</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Materialize Select</label>
             </div>
           <input id="submit" type="submit" name="submit" value="Add Tenant">
         </form>

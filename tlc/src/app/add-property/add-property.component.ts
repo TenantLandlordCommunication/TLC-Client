@@ -8,19 +8,23 @@ import { Http, Response, Headers } from '@angular/http';
   styleUrls: ['./add-property.component.css']
 })
 export class AddPropertyComponent implements OnInit {
+  propertyObj = {}
+  prop = {}
+
 
   constructor(private http: Http) { }
-  propertyObj: object = {};
+  // propertyObj: object = {};
 
   addNewProperty = function(property) {
+    // console.log(this.prop)
     this.propertyObj = {
       "address": property.address,
       "unit": property.unit,
-      "zipcode": property.zipcide,
+      "zipcode": property.zipcode,
       "rent": property.rent
     }
-    this.http.post('http://localhost:4200/property/', this.propertyObj).subscribe((res:Response) => {
-      console.log(res)
+    this.http.post('http://localhost:3000/property/', this.propertyObj).subscribe((res:Response) => {
+      return res
     })
   }
 

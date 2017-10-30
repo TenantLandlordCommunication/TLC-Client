@@ -18,7 +18,8 @@ export class MainComponent implements OnInit {
     }
 
   ngOnInit(): void{
-    this.http.get('https://tenantlandlordcommunications.herokuapp.com/property')
+    // this.http.get('https://tenantlandlordcommunications.herokuapp.com/property')
+    this.http.get('http://localhost:3000/property')
     .subscribe(data => {
       console.log(data)
       this.properties = data;

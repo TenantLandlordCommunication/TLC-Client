@@ -19,26 +19,26 @@
         <form id="form" class="col s12 m4 center" #propertyData = 'ngForm' (ngSubmit) = 'addNewProperty(propertyData.value)'>
           <div class="row form">
             <div class="input-field col s12">
-              <input id="address" type="text" class="validate">
-              <label for="address" ngModel>Address</label>
+              <input id="address" type="text" class="validate" [(ngModel)]="prop.address" name="address">
+              <label for="address">Address</label>
             </div>
           </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="unit" type="text" class="validate">
-                <label for="unit" ngModel>Unit</label>
+                <input id="unit" type="text" class="validate" [(ngModel)]="prop.unit" name="unit">
+                <label for="unit">Unit</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="zipcode" type="text" class="validate">
-                <label for="zipcode" ngModel>Zip Code</label>
+                <input id="zipcode" type="text" class="validate" [(ngModel)]="prop.zipcode" name="zipcode">
+                <label for="zipcode">Zip Code</label>
               </div>
             </div>
           <div class="row">
             <div class="input-field col s12 center">
-              <input id="rent" type="text" class="validate">
-              <label for="rent" ngModel>Rent</label>
+              <input id="rent" type="text" class="validate" [(ngModel)]="prop.rent" name="rent">
+              <label for="rent">Rent</label>
             </div>
           </div>
           <input id="submit" type="submit" name="submit" value="Add Property">

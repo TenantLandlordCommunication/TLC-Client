@@ -22,3 +22,38 @@
 [warn] ⚠  Warning: Public directory does not contain index.html
 [debug] [2017-10-24T16:36:24.663Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tenantlandlordcommunications/uploads/-KxEEFb8P1O5WJzVlZ6K?fileCount=24811&message=  
  Tue Oct 24 2017 10:36:24 GMT-0600 (MDT)
+[debug] [2017-10-28T19:57:57.785Z] ----------------------------------------------------------------------
+[debug] [2017-10-28T19:57:57.788Z] Command:      /usr/local/Cellar/node/8.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-10-28T19:57:57.788Z] CLI Version:  3.9.1
+[debug] [2017-10-28T19:57:57.788Z] Platform:     darwin
+[debug] [2017-10-28T19:57:57.789Z] Node Version: v8.7.0
+[debug] [2017-10-28T19:57:57.789Z] Time:         Sat Oct 28 2017 13:57:57 GMT-0600 (MDT)
+[debug] [2017-10-28T19:57:57.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-28T19:57:57.810Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-28T19:57:57.811Z] > authorizing via signed-in user
+[debug] [2017-10-28T19:57:57.814Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-28T19:57:57.814Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/gQKSmDUvgHoAMrY4uJ1omMxFb5j2jToOGtQfFego2wc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Oct 28 2017 13:57:57 GMT-0600 (MDT)
+[debug] [2017-10-28T19:57:58.041Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-28T19:57:58.052Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tenantlandlordcommunications  
+ Sat Oct 28 2017 13:57:58 GMT-0600 (MDT)
+[debug] [2017-10-28T19:57:58.488Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-28T19:57:58.489Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tenantlandlordcommunications/tokens  
+ Sat Oct 28 2017 13:57:58 GMT-0600 (MDT)
+[debug] [2017-10-28T19:57:58.930Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tenantlandlordcommunications'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing ./ directory for upload...
+[warn] ⚠  Warning: Public directory does not contain index.html
+[debug] [2017-10-28T19:59:00.807Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tenantlandlordcommunications/uploads/-KxZZ-JTdvd5cGQrER8V?fileCount=29447&message=  
+ Sat Oct 28 2017 13:59:00 GMT-0600 (MDT)
+[debug] [2017-10-28T20:34:44.586Z] Error: write EPIPE
+[error] 
+[error] Error: Server Error. write EPIPE
