@@ -37,7 +37,8 @@
                   <td>{{property.zipcode}}</td>
                   <td><i class="material-icons">folder</i></td>
                   <td>${{property.rent}}</td>
-                  <td><i onclick="Materialize.toast('Property Deleted', 4000)" class="hoverable material-icons">delete_forever</i></td>
+                  <td (click) = "deleteProperty(product.id)">DELETE</td>
+                  <!-- <td><i onclick="Materialize.toast('Property Deleted', 4000)" class="hoverable material-icons">delete_forever</i></td> -->
                 </tr>
               <tbody>
             </table>

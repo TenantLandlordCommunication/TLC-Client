@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+import { Http, Response, Headers } from '@angular/http';
+
+
 
 @Component({
   selector: 'app-addtenant',
@@ -6,8 +10,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addtenant.component.css']
 })
 export class AddtenantComponent implements OnInit {
+  tenantObj = {}
+  tenant = {}
 
-  constructor() { }
+
+  constructor(private http: Http) { }
+
+  addNewTenant = function(tenant) {
+    // console.log(this.prop)
+    this.tenantObj = {
+      "name": tenant.name,
+      "number": tenant.number,
+      "email": tenant.email
+    }
+    this.http.post('http://localhost:3000/tenants/', this.tenantObj).subscribe((res:Response) => {
+      return res
+    })
+  }
 
   ngOnInit() {
   }

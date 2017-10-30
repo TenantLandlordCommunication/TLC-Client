@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+// import { Http, Response, Headers } from '@angular/http';
 
 
 @Component({
@@ -15,6 +15,8 @@ export class MainComponent implements OnInit {
     tenants
 
     constructor (private http: HttpClient){
+      // id:number;
+      // private headers = new Headers ({ 'Content-type': 'application/json'})
     }
 
   ngOnInit(): void{
@@ -25,7 +27,7 @@ export class MainComponent implements OnInit {
       this.properties = data;
     });
 
-    this.http.get('https://tenantlandlordcommunications.herokuapp.com/tenants')
+    this.http.get('http://localhost:3000/tenants')
     .subscribe(data => {
       console.log(data)
       this.tenants = data
@@ -37,7 +39,11 @@ export class MainComponent implements OnInit {
       this.tenants = data
     })
 
-
+    // this.http.get('http://localhost:3000/property')
+    // .subscribe(data => {
+    //   console.log(data)
+    //   this.properties = data;
+    // });
 
 
 

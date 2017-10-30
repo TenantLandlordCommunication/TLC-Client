@@ -19,20 +19,20 @@
         <form id="form" class="col s12 m4 center" #tenantData = 'ngForm' (ngSubmit) = 'addNewTenant(tenantData.value)'>
           <div class="row form">
             <div class="input-field col s12">
-              <input id="name" type="text" class="validate">
-              <label for="name" ngModel>Name</label>
+              <input id="name" type="text" class="validate" [(ngModel)]="tenant.name" name="name">
+              <label for="name">Name</label>
             </div>
           </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="number" type="text" data-length="10" class="validate">
-                <label for="number" ngModel>Phone Number</label>
+                <input id="number" type="text" data-length="10" class="validate" [(ngModel)]="tenant.number" name="number">
+                <label for="number">Phone Number</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="email" type="text" class="validate">
-                <label for="email" ngModel>Email</label>
+                <input id="email" type="text" class="validate" [(ngModel)]="tenant.email" name="email">
+                <label for="email">Email</label>
               </div>
             </div>
             <div class="input-field col s12" *ngFor="let property of properties">
