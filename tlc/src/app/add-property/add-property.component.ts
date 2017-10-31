@@ -23,9 +23,10 @@ export class AddPropertyComponent implements OnInit {
       "zipcode": property.zipcode,
       "rent": property.rent
     }
-    this.http.post('http://localhost:3000/property/', this.propertyObj).subscribe((res:Response) => {
+    this.http.post('https://tenantlandlordcommunications.herokuapp.com/property/', this.propertyObj).subscribe((res:Response) => {
       return res
     })
+
   }
 
   ngOnInit() {

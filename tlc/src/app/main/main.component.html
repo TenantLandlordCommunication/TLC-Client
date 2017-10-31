@@ -22,7 +22,7 @@
         </ul>
         <div id="properties" class="container center">
           <a routerLink ='/property' class="btn-floating btn-small waves-effect waves-light black left"><i class="material-icons">add</i></a><br>
-          <div class="row">
+          <div class="row propertyTable">
             <table class="striped">
               <thead>
                 <tr>
@@ -37,16 +37,15 @@
                   <td>{{property.zipcode}}</td>
                   <td><i class="material-icons">folder</i></td>
                   <td>${{property.rent}}</td>
-                  <td (click) = "deleteProperty(product.id)">DELETE</td>
-                  <!-- <td><i onclick="Materialize.toast('Property Deleted', 4000)" class="hoverable material-icons">delete_forever</i></td> -->
+                  <!-- <td (click) = "deleteProperty(property.id)"><a>DELETE</a></td> -->
+                  <td><i onclick="Materialize.toast('Property Deleted', 4000)" (click)='deleteProperty(property)' class="hoverable material-icons">delete_forever</i></td>
                 </tr>
-              <tbody>
             </table>
           </div>
         </div>
         <div id="tenants" class="container center">
-          <div class="row">
-            <a routerLink = '/tenant' class="btn-floating btn-small waves-effect waves-light black left"><i class="material-icons">add</i> Tenants</a>
+          <a routerLink = '/tenant' class="btn-floating btn-small waves-effect waves-light black left"><i class="material-icons">add</i> Tenants</a>
+          <div class="row tenantTable">
             <table class="striped">
               <thead>
                 <tr>
@@ -59,6 +58,7 @@
                     <th>Rent Amount</th>
                 </tr>
               </thead>
+              <!-- <div class="tenantTable"> -->
                 <tr *ngFor="let tenant of tenants">
                   <td>{{tenant.name}}</td>
                   <td>{{tenant.number}}</td>
@@ -80,6 +80,7 @@
                   <td></td>
                   <td><i class="material-icons">delete_forever</i></td>
                 </tr>
+              <!-- </div> -->
             </table>
           </div>
         </div>

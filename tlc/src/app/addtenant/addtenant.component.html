@@ -35,15 +35,13 @@
                 <label for="email">Email</label>
               </div>
             </div>
-            <div class="input-field col s12" *ngFor="let property of properties">
-              <select>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">{{property.address}}</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-              <label>Materialize Select</label>
-            </div>
+            <!--
+            <mat-form-field>
+              <mat-select>
+                <mat-option *ngFor="let property of properties" [(ngModel)]="address">{{ property.address }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+             -->
           <input id="submit" type="submit" name="submit" value="Add Tenant">
         </form>
       </div>

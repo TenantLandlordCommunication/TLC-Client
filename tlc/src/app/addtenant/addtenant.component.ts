@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { Http, Response, Headers } from '@angular/http';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 
 
 
@@ -12,7 +14,7 @@ import { Http, Response, Headers } from '@angular/http';
 export class AddtenantComponent implements OnInit {
   tenantObj = {}
   tenant = {}
-
+  properties
 
   constructor(private http: Http) { }
 
@@ -23,10 +25,11 @@ export class AddtenantComponent implements OnInit {
       "number": tenant.number,
       "email": tenant.email
     }
-    this.http.post('http://localhost:3000/tenants/', this.tenantObj).subscribe((res:Response) => {
+    this.http.post('https://tenantlandlordcommunications.herokuapp.com/tenants/', this.tenantObj).subscribe((res:Response) => {
       return res
     })
   }
+
 
   ngOnInit() {
   }

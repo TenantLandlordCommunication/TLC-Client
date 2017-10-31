@@ -50,6 +50,19 @@ html {
       padding: 20px;
       text-decoration: none;
   }
+
+  .propertyTable {
+    overflow: scroll;
+    height: 400px;
+    width: 100%;
+  }
+
+  .tenantTable {
+    overflow: scroll;
+    height: 400px;
+    width: 100%;
+  }
+
   .tableLi div i {
     width: 100%;
   }

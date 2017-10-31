@@ -8,8 +8,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AddPropertyComponent } from './add-property/add-property.component';
 import { FormsModule }   from '@angular/forms';
-import { HttpModule } from '@angular/http';
+// import { HttpModule } from '@angular/http';
 import { AddtenantComponent } from './addtenant/addtenant.component';
+// import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+// import 'hammerjs';
+
 
 
 
@@ -28,8 +31,13 @@ import { AddtenantComponent } from './addtenant/addtenant.component';
     AppRouterModule,
     HttpClientModule,
     FormsModule,
-    HttpModule
-
+    // HttpModule,
+    // MatButtonModule,
+    // MatCheckboxModule,
+  ],
+  exports: [
+      // MatButtonModule,
+      // MatCheckboxModule
 
   ],
   providers: [],
