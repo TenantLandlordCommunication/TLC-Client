@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { Http, Response, Headers } from '@angular/http';
+import { Router } from '@angular/router';
+
+const url = 'https://tenantlandlordcommunications.herokuapp.com/'
+// const url = 'http://localhost:3000/'
+
+
 
 @Component({
   selector: 'app-add-property',
@@ -12,7 +18,7 @@ export class AddPropertyComponent implements OnInit {
   prop = {}
 
 
-  constructor(private http: Http) { }
+  constructor(private http: Http, private router: Router) { }
   // propertyObj: object = {};
 
   addNewProperty = function(property) {
@@ -23,8 +29,8 @@ export class AddPropertyComponent implements OnInit {
       "zipcode": property.zipcode,
       "rent": property.rent
     }
-    this.http.post('https://tenantlandlordcommunications.herokuapp.com/property/', this.propertyObj).subscribe((res:Response) => {
-      return res
+    this.http.post(url +'property/', this.propertyObj).subscribe((res:Response) => {
+      this.router.navigate(['/main'])
     })
 
   }

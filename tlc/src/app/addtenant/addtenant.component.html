@@ -35,13 +35,18 @@
                 <label for="email">Email</label>
               </div>
             </div>
-            <!--
-            <mat-form-field>
-              <mat-select>
-                <mat-option *ngFor="let property of properties" [(ngModel)]="address">{{ property.address }}</mat-option>
-              </mat-select>
-            </mat-form-field>
-             -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="rent" type="text" class="validate" [(ngModel)]="tenant.rentdue" name="rent">
+                <label for="rent">Rent</label>
+              </div>
+            </div>
+            <select class='propertySelector' name='address' [(ngModel)]= 'tenant.address'>
+              <option *ngFor="let property of properties" value="{{property.address}}">{{property.address}}</option>
+            </select>
+            <select class='zipSelector' name='address' [(ngModel)]= 'tenant.zipcode'>
+              <option *ngFor="let property of properties" value="{{property.zipcode}}">{{property.zipcode}}</option>
+            </select>
           <input id="submit" type="submit" name="submit" value="Add Tenant">
         </form>
       </div>

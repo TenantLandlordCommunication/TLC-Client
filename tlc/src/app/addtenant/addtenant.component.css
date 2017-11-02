@@ -53,6 +53,21 @@ html {
     margin-left: 230px;
 }
 
+.propertySelector {
+  display: inline !important;
+  color: black;
+  border: solid black;
+  margin-bottom: 10px;
+}
+
+.zipSelector {
+  display: inline !important;
+  color: black;
+  border: solid black;
+  margin-bottom: 10px;
+}
+
+
 label {
   color: black;
   font-weight: bold;

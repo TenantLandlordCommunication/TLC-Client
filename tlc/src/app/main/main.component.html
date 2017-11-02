@@ -67,6 +67,7 @@
                   <td>{{tenant.zipcode}}</td>
                   <td><i class="material-icons">folder</i></td>
                   <td>${{tenant.rentdue}}</td>
+                  <td><i onclick="Materialize.toast('Text Tenant', 4000)" (click)='textTenant()' class="hoverable material-icons">textsms</i></td>
                   <td>
                     <div class="switch">
                       <label>
@@ -78,7 +79,7 @@
                     </div>
                   </td>
                   <td></td>
-                  <td><i class="material-icons">delete_forever</i></td>
+                  <td><i onclick="Materialize.toast('Tenant Deleted', 4000)" (click)='deleteTenant(tenant)' class="hoverable material-icons">delete_forever</i></td>
                 </tr>
               <!-- </div> -->
             </table>
