@@ -57,3 +57,35 @@
 [debug] [2017-10-28T20:34:44.586Z] Error: write EPIPE
 [error] 
 [error] Error: Server Error. write EPIPE
+[debug] [2017-11-07T21:37:25.584Z] ----------------------------------------------------------------------
+[debug] [2017-11-07T21:37:25.586Z] Command:      /usr/local/Cellar/node/8.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-11-07T21:37:25.587Z] CLI Version:  3.9.1
+[debug] [2017-11-07T21:37:25.587Z] Platform:     darwin
+[debug] [2017-11-07T21:37:25.587Z] Node Version: v8.7.0
+[debug] [2017-11-07T21:37:25.588Z] Time:         Tue Nov 07 2017 14:37:25 GMT-0700 (MST)
+[debug] [2017-11-07T21:37:25.588Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-07T21:37:25.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-07T21:37:25.608Z] > authorizing via signed-in user
+[debug] [2017-11-07T21:37:25.612Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-07T21:37:25.612Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/gQKSmDUvgHoAMrY4uJ1omMxFb5j2jToOGtQfFego2wc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Nov 07 2017 14:37:25 GMT-0700 (MST)
+[debug] [2017-11-07T21:37:25.896Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-07T21:37:25.905Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tenantlandlordcommunications  
+ Tue Nov 07 2017 14:37:25 GMT-0700 (MST)
+[debug] [2017-11-07T21:37:26.264Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-07T21:37:26.266Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tenantlandlordcommunications/tokens  
+ Tue Nov 07 2017 14:37:26 GMT-0700 (MST)
+[debug] [2017-11-07T21:37:26.915Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tenantlandlordcommunications'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing ./ directory for upload...
+[warn] ⚠  Warning: Public directory does not contain index.html
+[debug] [2017-11-07T21:38:37.728Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tenantlandlordcommunications/uploads/-KyNPeZSWeJ7mPV90HKS?fileCount=30809&message=  
+ Tue Nov 07 2017 14:38:37 GMT-0700 (MST)
